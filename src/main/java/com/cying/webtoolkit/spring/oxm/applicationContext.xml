@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:oxm="http://www.springframework.org/schema/oxm"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+           http://www.springframework.org/schema/oxm
+           http://www.springframework.org/schema/oxm/spring-oxm.xsd">
+
+    <bean id="oxmExample" class="com.cying.webtoolkit.spring.oxm.OXMExample">
+        <property name="marshaller" ref="castorMarshaller" />
+        <property name="unmarshaller" ref="castorMarshaller" />
+    </bean>
+    <bean id="oxmExample2" class="com.cying.webtoolkit.spring.oxm.OXMExample2">
+        <property name="marshaller" ref="xmlBeanMarshaller" />
+        <property name="unmarshaller" ref="xmlBeanMarshaller" />
+    </bean>
+    
+    <oxm:xmlbeans-marshaller id="xmlBeanMarshaller"/>
+    
+    <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller">
+    	<property name="mappingLocation" value="classpath:/com/cying/webtoolkit/spring/oxm/mapping.xml" />
+    </bean>
+    
+    
+</beans>

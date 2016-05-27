@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2016年4月11日 上午9:43:47                                                        
+
+     project    
+     description generate default binding and schema
+                   
+     chengying13378                                                                
+     ====================================================================== -->
+<project name="JiBx" basedir="." default="bindgen">
+    <description>
+    	generate default binding and schema
+    </description>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="bindgen" depends="depends" description="description">
+         <echo message="Running BindGen tool"></echo>
+	     <echo>${basedir}</echo>
+	     <java classpath="D:/local-maven-repo/org/jibx/jibx-bind/1.2.6/jibx-bind-1.2.6.jar;D:/local-maven-repo/org/jibx/jibx-run/1.2.6/jibx-run-1.2.6.jar;D:/local-maven-repo/bcel/bcel/5.1/bcel-5.1.jar;D:/JAR/xmlbeans/JiBx/jibx_1_2_6/jibx/lib/jibx-tools.jar;E:/STSWorkspace/cyingtoolkit/CyingToolKit/target/classes" fork="true" failonerror="true" classname="org.jibx.binding.generator.BindGen">
+            <arg value="-s"></arg>
+            <arg value="${basedir}/com/cying/webtoolkit/model/JiBx"></arg>
+            <arg value="com.cying.webtoolkit.model.JiBx.Order"></arg>
+         </java>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="depends">
+    </target>
+
+</project>
