@@ -1,4 +1,4 @@
-package com.xtfggef.dp.abstractfactory;
+package com.cying.webtoolkit.study.designpattern.abstractfactory;
 
 public class SendSmsFactory implements Provider{
 
