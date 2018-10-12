@@ -1,4 +1,4 @@
-package com.xtfggef.dp.bridge;
+package com.cying.webtoolkit.study.designpattern.bridge;
 
 public class MyBridge extends Bridge {
 	public void method(){

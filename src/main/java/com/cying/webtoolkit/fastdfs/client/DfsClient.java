@@ -12,7 +12,6 @@ import com.cying.webtoolkit.fastdfs.tracker.TrackerGroup;
 import com.cying.webtoolkit.fastdfs.tracker.TrackerServer;
 
 /*
- * FAST DFS 连接客户端
  */
 public class DfsClient {
  
@@ -76,8 +75,8 @@ public void setConfig(ClientConfig config) {
 	 
 	 String group_name = results[0];
 	 String remote_filename = results[1];
-	 System.out.println("上传文件成功： group name:" +group_name+"  remote file name: "+remote_filename);
+	 System.out.println("group name:" +group_name+"  remote file name: "+remote_filename);
 	 client.delete_file(group_name, remote_filename);
-	 System.out.println("删除文件成功！ ");
+	 System.out.println("eee");
  }
 }

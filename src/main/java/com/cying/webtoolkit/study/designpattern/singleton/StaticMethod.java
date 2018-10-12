@@ -1,4 +1,4 @@
-package com.xtfggef.dp.singleton;
+package com.cying.webtoolkit.study.designpattern.singleton;
 
 public class StaticMethod implements Singleton2{
 	public static int a = 1;

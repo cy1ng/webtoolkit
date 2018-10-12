@@ -1,4 +1,4 @@
-package com.xtfggef.dp.factorymethod;
+package com.cying.webtoolkit.study.designpattern.factorymethod;
 
 public class SendFactory {
 	
@@ -22,7 +22,7 @@ public class SendFactory {
 //		} else if ("sms" == type) {
 //			return new SmsSender();
 //		} else {
-//			System.out.println("ÇëÊäÈëÕıÈ·µÄÀàĞÍ!");
+//			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!");
 //			return null;
 //		}
 //	}

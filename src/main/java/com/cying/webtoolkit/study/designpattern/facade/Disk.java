@@ -1,4 +1,4 @@
-package com.xtfggef.dp.facade;
+package com.cying.webtoolkit.study.designpattern.facade;
 
 public class Disk {
 	

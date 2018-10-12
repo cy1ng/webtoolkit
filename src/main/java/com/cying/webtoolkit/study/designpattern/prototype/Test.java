@@ -1,9 +1,9 @@
-package com.xtfggef.dp.prototype;
+package com.cying.webtoolkit.study.designpattern.prototype;
 
 /**
- * ±¾´úÂë³ö×Ô²©¿Í£ºhttp://blog.csdn.net/zhangerqing 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Í£ï¿½http://blog.csdn.net/zhangerqing 
  * email:xtfggef@gmail.com
- * Î¢²©£ºhttp://weibo.com/xtfggef
+ * Î¢ï¿½ï¿½ï¿½ï¿½http://weibo.com/xtfggef
  * @author egg
  */
 public class Test {

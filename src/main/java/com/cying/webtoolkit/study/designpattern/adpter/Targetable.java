@@ -1,10 +1,10 @@
-package com.xtfggef.dp.adpter;
+package com.cying.webtoolkit.study.designpattern.adpter;
 
 public interface Targetable {
 
-	/* ÓëÔ­ÀàÖĞµÄ·½·¨ÏàÍ¬ */
+	/* ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ĞµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ */
 	public void method1();
 
-	/* ĞÂÀàµÄ·½·¨ */
+	/* ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ */
 	public void method2();
 }

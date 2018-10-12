@@ -1,7 +1,7 @@
-package com.xtfggef.dp.state;
+package com.cying.webtoolkit.study.designpattern.state;
 
 /**
- * ×´Ì¬ÀàµÄºËĞÄÀà
+ * ×´Ì¬ï¿½ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½
  * 2012-12-1
  * @author erqing
  *

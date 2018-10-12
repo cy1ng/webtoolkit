@@ -38,7 +38,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/uploadPage", method = RequestMethod.GET)
 	public String uploadPage() {
-		System.out.println("ÉÏ´«Ò³");
+		System.out.println("");
 		return "cying/multi_upload";
 	}
 	

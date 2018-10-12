@@ -1,4 +1,4 @@
-package com.xtfggef.dp.factorymethod;
+package com.cying.webtoolkit.study.designpattern.factorymethod;
 
 public class SmsSender implements Sender {
 

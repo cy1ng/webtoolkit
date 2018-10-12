@@ -60,7 +60,6 @@ public class TrackerClient
 		return this.getStoreStorage(trackerSocket, group_name);
 	}
 	
-	//建立socket连接
 	public  Socket getSocket(String ipAddr, int port) throws IOException
 	{
 		Socket sock = new Socket();
@@ -77,10 +76,10 @@ public class TrackerClient
 	public StorageServer getStoreStorage(Socket trackerSocket, String group_name) throws IOException
 	{
 		OutputStream out = trackerSocket.getOutputStream();
-		byte[] header;  //报文header
-		String ip_addr; //ip地址
-		int port;       //端口
-		byte cmd;       //指令
+		byte[] header;
+		String ip_addr;
+		int port;
+		byte cmd;
 		int out_len;
 		boolean bNewConnection;
 		byte store_path;
@@ -109,7 +108,6 @@ public class TrackerClient
 			header = ProtoCommon.packHeader(cmd, out_len, (byte)0);
 			out.write(header);
 			
-            //如果group_name存在
 			if (group_name != null && group_name.length() > 0)
 			{
 				byte[] bGroupName;
@@ -231,8 +229,8 @@ public class TrackerClient
 		OutputStream out = trackerSocket.getOutputStream();
 		byte[] header;
 		byte[] bFileName;
-		byte[] bGroupName; //有最大长度的限制，可能会被截短
-		byte[] bs;  //groupName的全部字节
+		byte[] bGroupName;
+		byte[] bs;
 		int len;
 		String ip;
 		int port;

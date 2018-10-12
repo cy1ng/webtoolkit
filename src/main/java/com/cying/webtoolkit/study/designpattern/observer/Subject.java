@@ -1,16 +1,16 @@
-package com.xtfggef.dp.observer;
+package com.cying.webtoolkit.study.designpattern.observer;
 
 public interface Subject {
 	
-	/*Ôö¼Ó¹Û²ìÕß*/
+	/*ï¿½ï¿½ï¿½Ó¹Û²ï¿½ï¿½ï¿½*/
 	public void add(Observer observer);
 	
-	/*É¾³ý¹Û²ìÕß*/
+	/*É¾ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½*/
 	public void del(Observer observer);
 	
-	/*Í¨ÖªËùÓÐµÄ¹Û²ìÕß*/
+	/*Í¨Öªï¿½ï¿½ï¿½ÐµÄ¹Û²ï¿½ï¿½ï¿½*/
 	public void notifyObservers();
 	
-	/*×ÔÉíµÄ²Ù×÷*/
+	/*ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½*/
 	public void operation();
 }

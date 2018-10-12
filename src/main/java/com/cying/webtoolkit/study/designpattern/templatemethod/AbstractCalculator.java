@@ -1,14 +1,14 @@
-package com.xtfggef.dp.templatemethod;
+package com.cying.webtoolkit.study.designpattern.templatemethod;
 
 public abstract class AbstractCalculator {
 	
-	/*Ö÷·½·¨£¬ÊµÏÖ¶Ô±¾ÀàÆäËü·½·¨µÄµ÷ÓÃ*/
+	/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¶Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½*/
 	public final int calculate(String exp,String opt){
 		int array[] = split(exp,opt);
 		return calculate(array[0],array[1]);
 	}
 	
-	/*±»×ÓÀàÖØÐ´µÄ·½·¨*/
+	/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ä·ï¿½ï¿½ï¿½*/
 	abstract public int calculate(int num1,int num2);
 	
 	public int[] split(String exp,String opt){

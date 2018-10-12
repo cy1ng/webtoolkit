@@ -11,13 +11,13 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Calculate implements ActionListener {
-	String s = "";// Êı×Ö´æÈëÕâ¸ö±äÁ¿
-	String s1 = "";// ±£´æÔËËã·û
-	String s2 = "";// ÓÃÓÚÏÔÊ¾£»
+	String s = "";
+	String s1 = "";
+	String s2 = "";
 	JTextField jt = new JTextField(20);
 	String z = "+,-,*,/";
 	String z1 = "0,1,2,3,4,5,6,7,8,9,.";
-	double d;// ÓÃÀ´´æ´¢ÔËËã·û×ó±ßµÄÊı
+	double d;
 
 	public void actionPerformed(ActionEvent e) {
 		String s3 = e.getActionCommand();
@@ -28,30 +28,30 @@ public class Calculate implements ActionListener {
 		}
 		if (s3.contains(z)) {
 			d = Double.parseDouble(s2);
-			s = "";// ÇåÁã
-			s1 = s3;// ´æÈëÔËËã·û
+			s = "";// ï¿½ï¿½ï¿½ï¿½
+			s1 = s3;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
 		if (s3.equals("=")) {
 			if (s2.equals("+")) {
-				s2 = (d + Double.parseDouble(s)) + "";// ÊµÏÖ¼Ó·¨
+				s2 = (d + Double.parseDouble(s)) + "";// Êµï¿½Ö¼Ó·ï¿½
 			}
 			if (s2.equals("-")) {
-				s2 = (d + Double.parseDouble(s)) + "";// ÊµÏÖ¼Ó·¨
+				s2 = (d + Double.parseDouble(s)) + "";// Êµï¿½Ö¼Ó·ï¿½
 			}
 			if (s2.equals("*")) {
-				s2 = (d + Double.parseDouble(s)) + "";// ÊµÏÖ¼Ó·¨
+				s2 = (d + Double.parseDouble(s)) + "";// Êµï¿½Ö¼Ó·ï¿½
 			}
 			if (s2.equals("/")) {
-				s2 = (d + Double.parseDouble(s)) + "";// ÊµÏÖ¼Ó·¨
+				s2 = (d + Double.parseDouble(s)) + "";// Êµï¿½Ö¼Ó·ï¿½
 			}
 			jt.setText(s2);
-			s = "";// ÔËËã½áÊøÇåÁã
+			s = "";// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
 	}
 
 	public Calculate() {
 		JFrame jf = new JFrame("Calculate");
-		JPanel p = new JPanel();// Ãæ°å
+		JPanel p = new JPanel();// ï¿½ï¿½ï¿½
 		// JTextField f=new JTextField();
 		JButton[] b = new JButton[16];
 		// JButton add,sub,mul,div,equ,dot;

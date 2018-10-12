@@ -1,4 +1,4 @@
-package com.xtfggef.dp.decorator;
+package com.cying.webtoolkit.study.designpattern.decorator;
 
 public class Source implements Sourceable {
 

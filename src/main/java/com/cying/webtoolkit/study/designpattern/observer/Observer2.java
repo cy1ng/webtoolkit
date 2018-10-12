@@ -1,4 +1,4 @@
-package com.xtfggef.dp.observer;
+package com.cying.webtoolkit.study.designpattern.observer;
 
 public class Observer2 implements Observer {
 

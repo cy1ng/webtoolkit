@@ -14,8 +14,6 @@ import org.apache.http.util.EntityUtils;
 
 public class MavenJarSearchClient {
      
-	//需要注入一个解析类去解析xml
-	
 	public String search(String url){
 
 		HttpClientBuilder clientBuilder  = HttpClients.custom();

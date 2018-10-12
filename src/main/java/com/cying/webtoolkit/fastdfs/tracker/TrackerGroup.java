@@ -21,7 +21,6 @@ public class TrackerGroup
 	public InetSocketAddress[] tracker_servers;
 	private ClientConfig config;
 	
-	/*根据多个tracker的地址，初始化TrackerGroup*/
 	public TrackerGroup(InetSocketAddress[] tracker_servers)
 	{
 		this.tracker_servers = tracker_servers;

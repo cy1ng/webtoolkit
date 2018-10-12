@@ -1,4 +1,4 @@
-package com.xtfggef.dp.command;
+package com.cying.webtoolkit.study.designpattern.command;
 
 public interface Command {
 	public void exe();

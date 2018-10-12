@@ -1,4 +1,4 @@
-package com.xtfggef.dp.memento;
+package com.cying.webtoolkit.study.designpattern.memento;
 
 public class Storage {
 	

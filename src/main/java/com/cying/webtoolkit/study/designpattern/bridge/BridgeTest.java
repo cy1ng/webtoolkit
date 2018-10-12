@@ -1,9 +1,9 @@
-package com.xtfggef.dp.bridge;
+package com.cying.webtoolkit.study.designpattern.bridge;
 
 /**
- * ±¾´úÂë³ö×Ô²©¿Í£ºhttp://blog.csdn.net/zhangerqing 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Í£ï¿½http://blog.csdn.net/zhangerqing 
  * email:xtfggef@gmail.com
- * Î¢²©£ºhttp://weibo.com/xtfggef
+ * Î¢ï¿½ï¿½ï¿½ï¿½http://weibo.com/xtfggef
  * @author egg
  * 
  */
@@ -13,12 +13,12 @@ public class BridgeTest {
 		
 		Bridge bridge = new MyBridge();
 		
-		/*µ÷ÓÃµÚÒ»¸ö¶ÔÏó*/
+		/*ï¿½ï¿½ï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 		Sourceable source1 = new SourceSub1();
 		bridge.setSource(source1);
 		bridge.method();
 		
-		/*µ÷ÓÃµÚ¶þ¸ö¶ÔÏó*/
+		/*ï¿½ï¿½ï¿½ÃµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 		Sourceable source2 = new SourceSub2();
 		bridge.setSource(source2);
 		bridge.method();

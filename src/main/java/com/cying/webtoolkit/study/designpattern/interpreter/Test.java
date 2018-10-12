@@ -1,16 +1,16 @@
-package com.xtfggef.dp.interpreter;
+package com.cying.webtoolkit.study.designpattern.interpreter;
 
 /**
- * ±¾´úÂë³ö×Ô²©¿Í£ºhttp://blog.csdn.net/zhangerqing 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Í£ï¿½http://blog.csdn.net/zhangerqing 
  * email:xtfggef@gmail.com
- * Î¢²©£ºhttp://weibo.com/xtfggef
+ * Î¢ï¿½ï¿½ï¿½ï¿½http://weibo.com/xtfggef
  * @author egg
  */
 public class Test {
 
 	public static void main(String[] args) {
 
-		// ¼ÆËã9+2-8µÄÖµ
+		// ï¿½ï¿½ï¿½ï¿½9+2-8ï¿½ï¿½Öµ
 		int result = new Minus().interpret((new Context(new Plus()
 				.interpret(new Context(9, 2)), 8)));
 		System.out.println(result);

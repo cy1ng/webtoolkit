@@ -1,4 +1,4 @@
-package com.xtfggef.dp.composite;
+package com.cying.webtoolkit.study.designpattern.composite;
 
 public class Tree {
 

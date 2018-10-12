@@ -29,9 +29,7 @@ public class CmdServer {
 					}
 			    	
 			    });
-			//绑定端口， 同步等待成功
 			ChannelFuture f = b.bind(port).sync();
-			//等待服务端监听端口关闭
 			f.channel().closeFuture().sync();
 			
 		} catch (InterruptedException e) {

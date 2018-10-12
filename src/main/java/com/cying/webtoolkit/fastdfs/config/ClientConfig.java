@@ -68,7 +68,6 @@ public class ClientConfig implements Cloneable {
 		return tracker_group;
 	}
 	
-	//初始化builder
 	public static Builder custom(){
     	return new Builder();
     }
@@ -108,7 +107,6 @@ public class ClientConfig implements Cloneable {
 		private  String  secret_key;   //generage token secret key
 		private  TrackerGroup tracker_group;
 		
-		//创建config实例
 		public ClientConfig build(){
 			return new ClientConfig(network_timeout, charset, tracker_http_port, anti_steal_token, secret_key, tracker_group);
 		}

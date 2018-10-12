@@ -24,9 +24,9 @@ public class FileController {
 	
 	@RequestMapping(value = "/upload.do", method = RequestMethod.POST)
 	public void upload(HttpServletRequest req, HttpServletResponse resp) throws FileUploadException{
-		logger.debug("文件解析开始：");
+		logger.debug("");
 		if(ServletFileUpload.isMultipartContent(req)){
-			logger.debug("报文是多部分的,确为文件上传！");			
+			logger.debug("");
 			// Create a factory for disk-based file items
 			DiskFileItemFactory factory = new DiskFileItemFactory();
 
@@ -39,7 +39,7 @@ public class FileController {
 
 			// Parse the request
 			List<FileItem> items = upload.parseRequest(req);
-			logger.debug("已上传列表：");
+			logger.debug("锟斤拷锟较达拷锟叫憋拷");
 			for(FileItem item : items){
 				System.out.println(item.getName());
 			}

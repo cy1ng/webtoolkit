@@ -1,4 +1,4 @@
-package com.xtfggef.dp.chainofresponsibility;
+package com.cying.webtoolkit.study.designpattern.chainofresponsibility;
 
 public abstract class AbstractHandler {
 	

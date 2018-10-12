@@ -1,4 +1,4 @@
-package com.xtfggef.dp.command;
+package com.cying.webtoolkit.study.designpattern.command;
 
 public class Invoker {
 	

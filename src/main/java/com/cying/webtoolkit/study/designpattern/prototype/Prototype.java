@@ -1,4 +1,4 @@
-package com.xtfggef.dp.prototype;
+package com.cying.webtoolkit.study.designpattern.prototype;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -14,21 +14,21 @@ public class Prototype implements Cloneable, Serializable {
 
 	private SerializableObject obj;
 
-	/* Ç³¸´ÖÆ */
+	/* Ç³ï¿½ï¿½ï¿½ï¿½ */
 	public Object clone() throws CloneNotSupportedException {
 		Prototype proto = (Prototype) super.clone();
 		return proto;
 	}
 
-	/* Éî¸´ÖÆ */
+	/* ï¿½î¸´ï¿½ï¿½ */
 	public Object deepClone() throws IOException, ClassNotFoundException {
 
-		/* Ð´Èëµ±Ç°¶ÔÏóµÄ¶þ½øÖÆÁ÷ */
+		/* Ð´ï¿½ëµ±Ç°ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		ObjectOutputStream oos = new ObjectOutputStream(bos);
 		oos.writeObject(this);
 
-		/* ¶Á³ö¶þ½øÖÆÁ÷²úÉúµÄÐÂ¶ÔÏó */
+		/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ */
 		ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
 		ObjectInputStream ois = new ObjectInputStream(bis);
 		return ois.readObject();

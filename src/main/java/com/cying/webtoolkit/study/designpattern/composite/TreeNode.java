@@ -1,12 +1,12 @@
-package com.xtfggef.dp.composite;
+package com.cying.webtoolkit.study.designpattern.composite;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * ±¾´úÂë³ö×Ô²©¿Í£ºhttp://blog.csdn.net/zhangerqing 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Í£ï¿½http://blog.csdn.net/zhangerqing 
  * email:xtfggef@gmail.com
- * Î¢²©£ºhttp://weibo.com/xtfggef
+ * Î¢ï¿½ï¿½ï¿½ï¿½http://weibo.com/xtfggef
  * @author egg
  */
 public class TreeNode {
@@ -35,17 +35,17 @@ public class TreeNode {
 		this.parent = parent;
 	}
 	
-	//Ìí¼Óº¢×Ó½Úµã
+	//ï¿½ï¿½Óºï¿½ï¿½Ó½Úµï¿½
 	public void add(TreeNode node){
 		children.add(node);
 	}
 	
-	//É¾³ýº¢×Ó½Úµã
+	//É¾ï¿½ï¿½ï¿½ï¿½ï¿½Ó½Úµï¿½
 	public void remove(TreeNode node){
 		children.remove(node);
 	}
 	
-	//È¡µÃº¢×Ó½Úµã
+	//È¡ï¿½Ãºï¿½ï¿½Ó½Úµï¿½
 	public Enumeration<TreeNode> getChildren(){
 		return children.elements();
 	}

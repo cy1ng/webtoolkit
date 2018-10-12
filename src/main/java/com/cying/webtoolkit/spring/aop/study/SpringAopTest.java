@@ -4,6 +4,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,7 +21,7 @@ public class SpringAopTest {
 	public  void test(){    	
 		logger.info("do test");
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args) throws BeansException {
 		logger.info("start main");
 		ApplicationContext ap = new ClassPathXmlApplicationContext(new String[]{"classpath:/com/cying/webtoolkit/spring/aop/study/spring-aop-study.xml"});
 		SpringAopTest aop = (SpringAopTest)ap.getBean("aopTest");

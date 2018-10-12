@@ -1,4 +1,4 @@
-package com.xtfggef.dp.adpter;
+package com.cying.webtoolkit.study.designpattern.adpter;
 
 public class Source {
 

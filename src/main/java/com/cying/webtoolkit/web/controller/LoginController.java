@@ -18,12 +18,12 @@ public class LoginController {
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {
-		logger.debug("获取登录页");
+		logger.debug("");
 		return "login/login";
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(@RequestParam("name")String name , @RequestParam("password")String password) {
-		logger.debug("登录中,用户名{}，密码{}",name,password);
+		logger.debug("{}",name,password);
 		return "redirect:index";
 	}
 }

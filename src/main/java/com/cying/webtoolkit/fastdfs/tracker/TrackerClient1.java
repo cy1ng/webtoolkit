@@ -75,10 +75,10 @@ public class TrackerClient1
 	public StorageServer getStoreStorage(Socket trackerSocket, String group_name) throws IOException
 	{
 		OutputStream out = trackerSocket.getOutputStream();
-		byte[] header;  //±¨ÎÄheader
-		String ip_addr; //ipµØÖ·
-		int port;       //¶Ë¿Ú
-		byte cmd;       //Ö¸Áî
+		byte[] header;
+		String ip_addr;
+		int port;
+		byte cmd;
 		int out_len;
 		boolean bNewConnection;
 		byte store_path;
@@ -142,7 +142,7 @@ public class TrackerClient1
 			this.errno = pkgInfo.errno;
 			if (pkgInfo.errno != 0)
 			{
-				System.out.println("´Ótracker»ñÈ¡storage´íÎó £ºerrno=" +errno);
+				System.out.println("ï¿½ï¿½trackerï¿½ï¿½È¡storageï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½errno=" +errno);
 				return null;
 			}
 			
@@ -151,7 +151,7 @@ public class TrackerClient1
 			port = (int)ProtoCommon.buff2long(pkgInfo.body, ProtoCommon.FDFS_GROUP_NAME_MAX_LEN
 	                        + ProtoCommon.FDFS_IPADDR_SIZE-1);
 			store_path = pkgInfo.body[ProtoCommon.TRACKER_QUERY_STORAGE_STORE_BODY_LEN - 1];
-			System.out.println("´Ótracker»ñÈ¡µÄstorage ip: "+ip_addr+" , "+"port :" + port);
+			System.out.println("ï¿½ï¿½trackerï¿½ï¿½È¡ï¿½ï¿½storage ip: "+ip_addr+" , "+"port :" + port);
 			return new StorageServer(config.getSocket(ip_addr, port), store_path);
 		}
 		finally

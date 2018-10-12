@@ -2,11 +2,11 @@ package com.cying.webtoolkit.model;
 
 import java.util.List;
 
-import org.springframework.data.annotation.Id;
+//import org.springframework.data.annotation.Id;
 
 public class JarFile {
 	   
-	@Id
+//	@Id
 	private int jarFileId;
 	private String jarFileRealName;
 	private String jarFileStoreName;

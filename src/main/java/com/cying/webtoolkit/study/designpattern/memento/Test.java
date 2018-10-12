@@ -1,28 +1,28 @@
-package com.xtfggef.dp.memento;
+package com.cying.webtoolkit.study.designpattern.memento;
 
 /**
- * ±¾´úÂë³ö×Ô²©¿Í£ºhttp://blog.csdn.net/zhangerqing 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Í£ï¿½http://blog.csdn.net/zhangerqing 
  * email:xtfggef@gmail.com
- * Î¢²©£ºhttp://weibo.com/xtfggef
+ * Î¢ï¿½ï¿½ï¿½ï¿½http://weibo.com/xtfggef
  * @author egg
  */
 public class Test {
 
 	public static void main(String[] args) {
 		
-		// ´´½¨Ô­Ê¼Àà
+		// ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ï¿½
 		Original origi = new Original("egg");
 
-		// ´´½¨±¸ÍüÂ¼
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼
 		Storage storage = new Storage(origi.createMemento());
 
-		// ÐÞ¸ÄÔ­Ê¼ÀàµÄ×´Ì¬
-		System.out.println("³õÊ¼»¯×´Ì¬Îª£º" + origi.getValue());
+		// ï¿½Þ¸ï¿½Ô­Ê¼ï¿½ï¿½ï¿½×´Ì¬
+		System.out.println("ï¿½ï¿½Ê¼ï¿½ï¿½×´Ì¬Îªï¿½ï¿½" + origi.getValue());
 		origi.setValue("niu");
-		System.out.println("ÐÞ¸ÄºóµÄ×´Ì¬Îª£º" + origi.getValue());
+		System.out.println("ï¿½Þ¸Äºï¿½ï¿½×´Ì¬Îªï¿½ï¿½" + origi.getValue());
 
-		// »Ø¸´Ô­Ê¼ÀàµÄ×´Ì¬
+		// ï¿½Ø¸ï¿½Ô­Ê¼ï¿½ï¿½ï¿½×´Ì¬
 		origi.restoreMemento(storage.getMemento());
-		System.out.println("»Ö¸´ºóµÄ×´Ì¬Îª£º" + origi.getValue());
+		System.out.println("ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½×´Ì¬Îªï¿½ï¿½" + origi.getValue());
 	}
 }

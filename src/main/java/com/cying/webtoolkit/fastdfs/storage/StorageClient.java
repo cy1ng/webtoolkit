@@ -35,9 +35,9 @@ public class StorageClient
 
 	/**
 	* upload file to storage server (by file name)
-	* @param local_filename ： local filename to upload  要上传的文件的名称
-	* @param file_ext_name ： file ext name, do not include dot(.), null to extract ext name from the local filename
-	* @param meta_list ： meta info array
+	* @param local_filename local filename to upload
+	* @param file_ext_name  file ext name, do not include dot(.), null to extract ext name from the local filename
+	* @param meta_list  meta info array
 	* @return  2 elements string array if success:<br>
 	*           <ul><li>results[0]: the group name to store the file </li></ul>
 	*           <ul><li>results[1]: the new created filename</li></ul>

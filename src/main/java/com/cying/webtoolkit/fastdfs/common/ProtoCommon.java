@@ -64,7 +64,6 @@ public class ProtoCommon
 	
 	public static final byte FDFS_FILE_EXT_NAME_MAX_LEN  = 5;
 	/**
-	* 接收到的报文体格式
 	*/
 	public static class RecvPackageInfo
 	{
@@ -79,7 +78,7 @@ public class ProtoCommon
 	}
 	
 	/**
-	* 接收报文头
+	* 锟斤拷锟秸憋拷锟斤拷头
 	*/
 	public static class RecvHeaderInfo
 	{
@@ -100,9 +99,8 @@ public class ProtoCommon
 	}
 
 /**
-* 组装报文头
 * @param cmd which command to send
-* @param pkg_len package body length  报文体长度
+* @param pkg_len package body length
 * @param errno status code, should be (byte)0
 * @return packed byte buffer
 */
@@ -122,10 +120,9 @@ public class ProtoCommon
 	}
 
 /**
-* 从输入流中接收报文头
-* @param in input stream  输入流
-* @param expect_cmd expect response command  预计的cmd
-* @param expect_body_len expect response package body length  预计的包体长度
+* @param in input stream
+* @param expect_cmd expect response command
+* @param expect_body_len expect response package body length
 * @return RecvHeaderInfo: errno and pkg body length
 */
 	public static RecvHeaderInfo recvHeader(InputStream in, byte expect_cmd, long expect_body_len) throws IOException
@@ -151,7 +148,7 @@ public class ProtoCommon
 			return new RecvHeaderInfo(header[PROTO_HEADER_STATUS_INDEX], 0);
 		}
 		
-		pkg_len = ProtoCommon.buff2long(header, 0);  //把前8个字节转换成long
+		pkg_len = ProtoCommon.buff2long(header, 0);  //锟斤拷前8锟斤拷锟街斤拷转锟斤拷锟斤拷long
 		if (pkg_len < 0)
 		{
 			throw new IOException("recv body length: " + pkg_len + " < 0!");
@@ -166,7 +163,7 @@ public class ProtoCommon
 	}
 
 /**
-* receive whole pack    接收整个包
+* receive whole pack    锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
 * @param in input stream
 * @param expect_cmd expect response command
 * @param expect_body_len expect response package body length

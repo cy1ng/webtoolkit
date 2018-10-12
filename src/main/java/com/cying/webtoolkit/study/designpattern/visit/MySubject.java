@@ -1,4 +1,4 @@
-package com.xtfggef.dp.visit;
+package com.cying.webtoolkit.study.designpattern.visit;
 
 public class MySubject implements Subject {
 

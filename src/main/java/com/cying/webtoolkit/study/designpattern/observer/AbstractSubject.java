@@ -1,4 +1,4 @@
-package com.xtfggef.dp.observer;
+package com.cying.webtoolkit.study.designpattern.observer;
 
 import java.util.Enumeration;
 import java.util.Vector;

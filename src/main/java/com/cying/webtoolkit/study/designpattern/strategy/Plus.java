@@ -1,4 +1,4 @@
-package com.xtfggef.dp.strategy;
+package com.cying.webtoolkit.study.designpattern.strategy;
 
 public class Plus extends AbstractCalculator {
 

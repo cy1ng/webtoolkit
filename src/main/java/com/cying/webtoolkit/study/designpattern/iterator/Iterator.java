@@ -1,13 +1,13 @@
-package com.xtfggef.dp.iterator;
+package com.cying.webtoolkit.study.designpattern.iterator;
 
 public interface Iterator {
-	//前移
+	//前锟斤拷
 	public Object previous();
 	
-	//后移
+	//锟斤拷锟斤拷
 	public Object next();
 	public boolean hasNext();
 	
-	//取得第一个元素
+	//取锟矫碉拷一锟斤拷元锟斤拷
 	public Object first();
 }

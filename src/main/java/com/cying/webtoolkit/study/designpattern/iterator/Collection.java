@@ -1,12 +1,12 @@
-package com.xtfggef.dp.iterator;
+package com.cying.webtoolkit.study.designpattern.iterator;
 
 public interface Collection {
 	
 	public Iterator iterator();
 	
-	/*取得集合元素*/
+	/*取锟矫硷拷锟斤拷元锟斤拷*/
 	public Object get(int i);
 	
-	/*取得集合大小*/
+	/*取锟矫硷拷锟较达拷小*/
 	public int size();
 }

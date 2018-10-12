@@ -9,8 +9,8 @@ public class Run {
 			thread.start();
 			Thread.sleep(1000);
 			thread.interrupt();
-			System.out.println("ÊÇ·ñÍ£Ö¹1 £¿ ="+Thread.currentThread().interrupted());
-			System.out.println("ÊÇ·ñÍ£Ö¹2 £¿ ="+Thread.currentThread().interrupted());
+			System.out.println(" ="+Thread.currentThread().interrupted());
+			System.out.println(" ="+Thread.currentThread().interrupted());
 		}catch(InterruptedException e){
 			System.out.println("main catch");
 			e.printStackTrace();

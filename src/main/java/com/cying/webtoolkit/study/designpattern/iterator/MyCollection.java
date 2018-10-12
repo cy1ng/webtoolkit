@@ -1,4 +1,4 @@
-package com.xtfggef.dp.iterator;
+package com.cying.webtoolkit.study.designpattern.iterator;
 
 public class MyCollection implements Collection {
 

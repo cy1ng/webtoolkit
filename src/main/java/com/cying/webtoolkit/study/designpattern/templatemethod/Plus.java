@@ -1,4 +1,4 @@
-package com.xtfggef.dp.templatemethod;
+package com.cying.webtoolkit.study.designpattern.templatemethod;
 
 public class Plus extends AbstractCalculator {
 

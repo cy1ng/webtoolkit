@@ -1,4 +1,4 @@
-package com.xtfggef.dp.visit;
+package com.cying.webtoolkit.study.designpattern.visit;
 
 public interface Visitor {
 	public void visit(Subject sub);

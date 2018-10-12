@@ -15,7 +15,7 @@ import com.cying.webtoolkit.fastdfs.callback.DowloadCallback;
 import com.cying.webtoolkit.fastdfs.callback.UploadCallback;
 import com.cying.webtoolkit.fastdfs.common.NameValuePair;
 
-/** groupName 和fileName 合并成了一个字段
+/** groupName
 * Storage client for 1 field file id: combined group name and filename
 * @author Happy Fish / YuQing
 * @version Version 1.9

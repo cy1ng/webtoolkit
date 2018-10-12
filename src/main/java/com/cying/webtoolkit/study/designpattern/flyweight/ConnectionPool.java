@@ -1,4 +1,4 @@
-package com.xtfggef.dp.flyweight;
+package com.cying.webtoolkit.study.designpattern.flyweight;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,16 +6,16 @@ import java.sql.SQLException;
 import java.util.Vector;
 
 /**
- * ±¾´úÂë³ö×Ô²©¿Í£ºhttp://blog.csdn.net/zhangerqing 
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Í£ï¿½http://blog.csdn.net/zhangerqing 
  * email:xtfggef@gmail.com
- * Î¢²©£ºhttp://weibo.com/xtfggef
+ * Î¢ï¿½ï¿½ï¿½ï¿½http://weibo.com/xtfggef
  * @author egg
  */
 public class ConnectionPool {
 	
 	private Vector<Connection> pool;
 	
-	/*¹«ÓÐÊôÐÔ*/
+	/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	private String url = "jdbc:mysql://localhost:3306/test";
 	private String username = "root";
 	private String password = "root";
@@ -25,7 +25,7 @@ public class ConnectionPool {
 	private static ConnectionPool instance = null;
 	Connection conn = null;
 
-	/*¹¹Ôì·½·¨£¬×öÒ»Ð©³õÊ¼»¯¹¤×÷*/
+	/*ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	private ConnectionPool() {
 		pool = new Vector<Connection>(poolSize);
 
@@ -42,12 +42,12 @@ public class ConnectionPool {
 		}
 	}
 
-	/* ·µ»ØÁ¬½Óµ½Á¬½Ó³Ø */
+	/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½Ó³ï¿½ */
 	public synchronized void release() {
 		pool.add(conn);
 	}
 
-	/* ·µ»ØÁ¬½Ó³ØÖÐµÄÒ»¸öÊý¾Ý¿âÁ¬½Ó */
+	/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½Ðµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	public synchronized Connection getConnection() {
 		if (pool.size() > 0) {
 			Connection conn = pool.get(0);

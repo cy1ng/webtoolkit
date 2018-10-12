@@ -9,9 +9,8 @@ public class Run2 {
 			thread.start();
 			Thread.sleep(1000);
 			thread.interrupt();
-			//isInterrupted不会清除中断状态
-			System.out.println("是否停止1 ？ ="+thread.isInterrupted());
-			System.out.println("是否停止2 ？ ="+thread.isInterrupted());
+			System.out.println(" ="+thread.isInterrupted());
+			System.out.println(" ="+thread.isInterrupted());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
