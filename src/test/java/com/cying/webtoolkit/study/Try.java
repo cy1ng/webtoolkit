@@ -8,7 +8,6 @@ public class Try {
 	}
 
 	
-	//´ø·ûºÅÓÒÒÆ   ²»´ø·ûºÅÓÒÒÆ  
 	private static void moveTest(int i ){
 		
 		System.out.println(i>>1);
