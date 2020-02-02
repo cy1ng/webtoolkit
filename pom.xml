@@ -21,7 +21,7 @@
         <org.aspectj-version>1.6.10</org.aspectj-version>
         <org.slf4j-version>1.6.6</org.slf4j-version>
         <spring-data-mongo.version>1.8.0.RELEASE</spring-data-mongo.version>
-        <org.apache.commons-fileupload-version>1.3.1</org.apache.commons-fileupload-version>
+        <org.apache.commons-fileupload-version>1.3.3</org.apache.commons-fileupload-version>
         <io.netty-version>4.0.35.Final</io.netty-version>
         <org.jibx-version>1.2.6</org.jibx-version>
         <com.alibaba.fastjson-version>1.2.9</com.alibaba.fastjson-version>
