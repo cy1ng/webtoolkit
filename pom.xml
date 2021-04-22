@@ -29,7 +29,7 @@
         <apache.httpcore-version>4.4.4</apache.httpcore-version>
         <org.apache.log4j-version>2.5</org.apache.log4j-version>
         <!-- mysql mybatis-->
-        <org.mybatis-version>3.2.8</org.mybatis-version>
+        <org.mybatis-version>3.5.6</org.mybatis-version>
         <mysql.connector-version>5.1.29</mysql.connector-version>
         <org.apache.dbcp-version>1.4</org.apache.dbcp-version>
         <org.mybatis.mybatis-spring-version>1.2.2</org.mybatis.mybatis-spring-version>
