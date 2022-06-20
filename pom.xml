@@ -30,7 +30,7 @@
         <org.apache.log4j-version>2.5</org.apache.log4j-version>
         <!-- mysql mybatis-->
         <org.mybatis-version>3.2.8</org.mybatis-version>
-        <mysql.connector-version>5.1.29</mysql.connector-version>
+        <mysql.connector-version>8.0.28</mysql.connector-version>
         <org.apache.dbcp-version>1.4</org.apache.dbcp-version>
         <org.mybatis.mybatis-spring-version>1.2.2</org.mybatis.mybatis-spring-version>
         <org.apache.flume-version>1.6.0</org.apache.flume-version>
